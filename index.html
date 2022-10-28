@@ -1,15 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link href="./assets/css/reset.css" rel="stylesheet" />
-        <link href="./assets/css/normalize.css" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet" />
-        <title>Fruta & Fruto</title>
-    </head>
-    <body>
-        
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900"
+      rel="stylesheet"
+    />
+    <link href="./assets/css/reset.css" rel="stylesheet" />
+    <link href="./assets/css/normalize.css" rel="stylesheet" />
+    <link href="./assets/css/base.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/cabecalho/cabecalho.css" />
+    <link rel="stylesheet" href="./assets/css/banner/banner.css" />
+    <link rel="stylesheet" href="./assets/css/sobre/sobre.css" />
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"
+      defer
+    ></script>
+    <script src="./assets/js/main.js" defer></script>
+    <title>Frutas & Frutos</title>
+  </head>
+  <body>
+    <header class="cabecalho container">
+      <img
+        src="./assets/img/logo.jpg"
+        alt="Logo da Frutas & Frutos"
+        class="cabecalho__logo"
+      />
+
+      <nav class="cabecalho__menu">
+        <ul class="cabecalho__menu-lista">
+          <li class="cabecalho__menu-item ativo">
+            <a href="#" class="cabecalho__menu-link"> Início </a>
+          </li>
+          <li class="cabecalho__menu-item">
+            <a href="#" class="cabecalho__menu-link"> Receitas </a>
+          </li>
+          <li class="cabecalho__menu-item">
+            <a href="#" class="cabecalho__menu-link"> Quem Somos </a>
+          </li>
+          <li class="cabecalho__menu-item">
+            <a href="#" class="cabecalho__menu-link"> Comunidade </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Fim do cabeçalho -->
+
+    <section class="banner">
+      <img src="./assets/img/banner.jpg" alt="banner" class="banner__img" />
+      <h2 class="banner__titulo">
+        Reaproveite melhor os alimentos!
+      </h2>
+    </section>
+    <!-- Fim do banner -->
+
+    <section class="sobre">
+      <h2 class="sobre__titulo">
+        Receitas para economizar e ganhar saúde
+    </h2>
+      <p class="sobre__texto">
+        Nossas receitas ajudam você a aproveitar melhor os alimentos,
+        economizar, ganhar tempo e praticidade
+      </p>
+    </section>
+    <!-- Fim da seção sobre -->
+  </body>
 </html>
