@@ -3,6 +3,10 @@
 }
 
 .banner__img{
+    background-image: url(../../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     width: 100%;
     height: calc(100vh - 5rem);
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);;
