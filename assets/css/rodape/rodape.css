@@ -1,7 +1,13 @@
 .rodape{
     background-color: var(--cinza_ativo);
-    color: var(--branco_titulo);
+    color: var(--cinza_claro);
     padding: 1.75rem 5rem;
-    text-align: right;
+    text-align: center;
     text-transform: lowercase;
+    font-size: .9rem;
+    font-weight: 300;
+}
+
+.rodape:hover{
+    color: var(--branco_titulo);
 }

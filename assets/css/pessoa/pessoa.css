@@ -1,45 +1,72 @@
-.pessoas{
-    display: flex;
-    justify-content: space-around;
-    padding-top: 3rem;
-
+.pessoas {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 3rem;
 }
-.pessoa{
-    display: flex;
+.pessoa {
+  display: flex;
+  flex-direction: column;
+}
+
+.pessoa__nome {
+  margin: 1rem 0;
+  font-family: Pacifico, cursive;
+  color: var(--vermelho_vinho);
+  font-size: 2rem;
+}
+
+.pessoa__funcao {
+  text-transform: lowercase;
+  color: var(--cinza_claro);
+  font-size: 1.2rem;
+}
+
+.pessoa__imagem {
+  margin: 0 auto;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.pessoa__imagem--roberta {
+  background-image: url(../../img/pessoas/roberta.jpg);
+}
+
+.pessoa__imagem--marcela {
+  background-image: url(../../img/pessoas/marcela.jpg);
+}
+
+.pessoa__imagem--andreia {
+  background-image: url(../../img/pessoas/andreia.jpg);
+}
+
+@media screen and (min-width: 0) {
+  .pessoas {
     flex-direction: column;
+  }
+
+  .pessoa {
+    margin-bottom: 3rem;
+  }
+
+  .pessoa__imagem {
+    width: 200px;
+    height: 200px;
+  }
 }
 
-.pessoa__nome{
-    margin: 1rem 0;
-    font-family: Pacifico, cursive;
-    color: var(--vermelho_vinho);
-    font-size: 2rem;
-}
+@media screen and (min-width: 768px) {
+  .pessoas {
+    flex-direction: row;
+  }
 
-.pessoa__funcao{
-    text-transform: lowercase;
-    color: var(--cinza_claro);
-    font-size: 1.2rem;
-}
+  .pessoa {
+    margin-bottom: 0;
+  }
 
-.pessoa__imagem{
+  .pessoa__imagem {
     width: 300px;
     height: 300px;
-    margin: 0 auto;
-    border-radius: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.pessoa__imagem--roberta{
-    background-image: url(../../img/pessoas/roberta.jpg);
-}
-
-.pessoa__imagem--marcela{
-    background-image: url(../../img/pessoas/marcela.jpg);
-}
-
-.pessoa__imagem--andreia{
-    background-image: url(../../img/pessoas/andreia.jpg);
+  }
 }

@@ -7,8 +7,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 100%;
-    height: calc(100vh - 5rem);
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);;
 }
 
@@ -16,7 +14,6 @@
     font-family: Pacifico, cursive;
     color: var(--branco_titulo);
     width: 100%;
-    font-size: 5rem;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -25,3 +22,24 @@
     transform: translate(-50%, -50%);
 }
 
+@media screen and (min-width: 0){
+    .banner__titulo{
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .banner__img{
+        height: calc(100vh - 9rem);
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .banner__titulo{
+        font-size: 5rem;
+    }
+
+    .banner__img{
+        height: calc(100vh - 5rem);   
+    }
+}

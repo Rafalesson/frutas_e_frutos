@@ -2,17 +2,13 @@
     background-color: var(--branco_bg_receitas);
     display: flex;
     flex-wrap: wrap;
-    padding: 5rem 0 0 5rem;
-    justify-content: space-evenly;
 }
 
 .receita{
     background-color: var(--branco_bg_receita);
     display: flex;
     flex-direction: column;
-    margin-right: 5rem;
     margin-bottom: 5rem;
-    width: calc(30% - 5rem);
     border-radius: 0 0 5px 5px;
 }
 
@@ -58,3 +54,30 @@
     text-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
     cursor: pointer;
 }
+
+
+@media screen and (min-width: 0) {
+    .receitas{
+        flex-direction: column;
+        padding: 0 2rem;
+        align-items: center;
+    }
+
+    .receita{
+        width: calc(100% - 3rem);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .receitas{
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 5rem 0 0 5rem;
+    }
+
+    .receita{
+        width: calc(33.33% - 5rem);
+        margin-right: 5rem;
+    }
+}
+    
