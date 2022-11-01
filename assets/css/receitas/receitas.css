@@ -1,0 +1,60 @@
+.receitas{
+    background-color: var(--branco_bg_receitas);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5rem 0 0 5rem;
+    justify-content: space-evenly;
+}
+
+.receita{
+    background-color: var(--branco_bg_receita);
+    display: flex;
+    flex-direction: column;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+    width: calc(30% - 5rem);
+    border-radius: 0 0 5px 5px;
+}
+
+.receita__imagem{
+    width: auto;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+}
+
+.receita__titulo{
+    color: var(--cinza_ativo);
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 1rem;
+    text-align: center;
+}
+
+.receita__descricao{
+    color: var(--cinza_claro);
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 1rem;
+    line-height: 1.25;
+    text-align: center;
+}
+
+.receita__botao{
+    margin: 0 1rem 1rem 1rem;
+    background-color: var(--vermelho_vinho);
+    color: var(--branco_titulo);
+    padding: .75rem 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    margin: 1rem auto;
+    display: flex;
+    font-size: 1.1rem;
+    transition: all .25s ease-in-out;
+}
+
+.receita__botao:hover{
+    background-color: var(--cabecalho_hover);
+    font-weight: bold;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}

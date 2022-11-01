@@ -1,0 +1,19 @@
+.quem-somos{
+    text-align: center;
+    padding: 3rem;
+}
+
+.quem-somos__titulo{
+    color: var(--vermelho_vinho);
+    margin-bottom: 1rem;
+    font-size: 3.2rem;
+    font-weight: 400;
+    font-family: Pacifico, cursive;
+}
+
+.quem-somos__descricao{
+    font-size: 1.25rem;
+    color: var(--cinza_claro);
+    font-weight: 300;
+    padding: .3rem 0 1rem 0;
+}
